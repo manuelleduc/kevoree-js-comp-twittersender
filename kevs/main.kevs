@@ -1,0 +1,12 @@
+add node0 : JavascriptNode
+add sync : WSGroup
+add node0.twitterSender : fr.kevoree.library.TwitterSender
+
+attach node0 sync
+
+set node0.logLevel = 'DEBUG'
+
+set node0.twitterSender.access_token_secret = ''
+set node0.twitterSender.access_token_key = ''
+set node0.twitterSender.consumer_secret = ''
+set node0.twitterSender.consumer_key = ''
